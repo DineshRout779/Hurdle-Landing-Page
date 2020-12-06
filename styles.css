@@ -36,6 +36,7 @@ h3 {
 a {
   display: inline-block;
   text-decoration: none;
+  color: #ffffff;
 }
 
 header {
@@ -52,6 +53,10 @@ header {
   width: 200px;
 }
 
+section {
+  padding: 1.5rem 0;
+}
+
 .hero {
   display: flex;
   justify-content: space-between;
@@ -65,7 +70,7 @@ header {
 }
 
 .hero .hero__content h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: 1rem;
 }
 
@@ -81,10 +86,38 @@ header {
   border-radius: 2rem;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  transition: background 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .cta-btn:hover {
   background: var(--Soft-Magenta);
   color: #fff;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+footer .container {
+}
+
+footer a .fa {
+  display: block;
+  padding: 0.5rem;
+  border: 2px solid #fff;
+  margin: 0 0.3rem;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+
+footer a .fa-facebook {
+  padding: 0.5rem 0.65rem;
+}
+
+footer a .fa:hover {
+  color: var(--Soft-Magenta);
+  border-color: var(--Soft-Magenta);
 }
