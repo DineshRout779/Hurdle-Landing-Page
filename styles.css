@@ -44,7 +44,7 @@ header {
 }
 
 .container {
-  width: 90%;
+  width: 85%;
   max-width: 1080px;
   margin: 0 auto;
 }
@@ -99,9 +99,7 @@ footer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-}
-
-footer .container {
+  padding: 3rem 0;
 }
 
 footer a .fa {
@@ -120,4 +118,37 @@ footer a .fa-facebook {
 footer a .fa:hover {
   color: var(--Soft-Magenta);
   border-color: var(--Soft-Magenta);
+}
+
+@media (max-width: 700px) {
+  body {
+    background: var(--Violet);
+  }
+  body::before {
+    content: "";
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(./images/bg-mobile.svg) no-repeat center center/cover;
+    z-index: -1;
+  }
+  .logo {
+    width: 170px;
+  }
+  .hero {
+    flex-direction: column;
+    gap: 6rem;
+  }
+  .hero__img,
+  .hero__content {
+    flex-basis: 100%;
+  }
+  .hero__content {
+    text-align: center;
+  }
+  footer {
+    justify-content: center;
+  }
 }
